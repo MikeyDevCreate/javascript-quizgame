@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script src="main.js" type="text/javascript"></script>
+	</head>
+	<body style="background-color:indigo;">
+		<h1 style="font-family:'Courier New';color:rgb(250, 72, 72);">Hello! This is a little text quiz like game!</h1>
+		<h2 style="font-family:'Courier New';color:rgb(250, 72, 72);">I hope you will like it!</h2>
+		<br>
+		<br>
+		<button onClick="startgame();" style="font-family:'Courier New';background-color:rgb(80, 110, 186);border-color:rgb(80, 110, 186);font-size:40px;width:170px;height:50px;">Play</button>
+		<br>
+		<br>
+		<br>
+		<h2 style="font-family:'Courier New';color:rgb(250, 72, 72);">Go play my other games!</h2>
+		<br>
+		<br>
+		<button onClick="itch();" style="font-family:'Courier New';background-color:rgb(80, 110, 186);border-color:rgb(80, 110, 186);font-size:40px;width:300px;height:50px;">My Itch.io!</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2 style="font-family:'Courier New';color:rgb(250, 72, 72);">If you like the things I do please support me by donating!</h2>
+		<br>
+		<br>
+		<div id="donate-button-container">
+			<div id="donate-button"></div>
+			<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+			<script>
+			PayPal.Donation.Button({
+			env:'production',
+			hosted_button_id:'R3Y64ZQNN8ZDS',
+			image: {
+			src:'https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif',
+			alt:'Donate with PayPal button',
+			title:'PayPal - The safer, easier way to pay online!',
+			}
+			}).render('#donate-button');
+			</script>
+		</div>			
+	</body>
+</html>
